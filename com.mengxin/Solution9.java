@@ -9,11 +9,11 @@ public class Solution9 {
 
     public static void main(String[] args) {
         int[][] arr = {{1, 2, 3, 1}, {4, 5, 6, 2}, {7, 8, 9, 3}};
-        printMatrix(arr);
+        spiralOrder(arr);
         System.out.println(res);
     }
 
-    public static ArrayList<Integer> printMatrix(int[][] matrix) {
+    public static ArrayList<Integer> spiralOrder(int[][] matrix) {
         if (matrix != null && matrix.length > 0 && matrix[0].length > 0) {
             for (int i = 0; i < matrix[0].length; i++) {
                 res.add(matrix[0][i]);
@@ -34,7 +34,7 @@ public class Solution9 {
                 res.add(matrix[i][0]);
             }
             int[][] newArr = getMatrix(matrix);
-            printMatrix(newArr);
+            spiralOrder(newArr);
         }
         return res;
     }

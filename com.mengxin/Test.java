@@ -4,7 +4,7 @@
  */
 public class Test {
     public static void main(String[] args) {
-        long a = 1;
-        System.out.println(a + '9' - '0');
+        int num = -12;
+        System.out.println(num % 10);
     }
 }
