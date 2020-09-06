@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -12,6 +13,8 @@ public class Test {
         System.out.println(s);
         ConcurrentHashMap<String, String> map = new ConcurrentHashMap<>();
         map.put("a", "b");
+        System.out.println(InterfaceTestSon.a);
+        HashMap<String, String> hashMap = new HashMap<>(100);
     }
 
     public static void change(String str) {
